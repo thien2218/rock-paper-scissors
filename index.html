@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  </head>
+
+  <body>
+    <div class='container'>
+      
+      <div class='score'>
+
+        <img src='./images/logo.svg' class='logo' />
+        <div class='player-score'>
+            <span>YOUR SCORE</span>
+            <span id="player-score">0</span>
+        </div>
+        <div class='house-score'>
+            <span>HOUSE'S SCORE</span>
+            <span id="house-score">0</span>
+        </div>
+        
+      </div>
+
+      <div class="result inactive" id="result">
+
+        <div id="player-choose">
+          <button class='rock player inactive'>
+            <div class='circle'><img src='./images/icon-rock.svg' /></div>
+          </button>
+          <button class='paper player inactive'>
+              <div class='circle'><img src='./images/icon-paper.svg' /></div>
+          </button>
+          <button class='scissors player inactive'>
+              <div class='circle'><img src='./images/icon-scissors.svg' /></div>
+          </button>
+        </div>
+
+        <div class="play-again">
+          <span id="win-lose"></span>
+          <button id="play-again">PLAY AGAIN</button>
+        </div>
+
+        <div id="house-choose">
+          <button class='rock house inactive'>
+            <div class='circle'><img src='./images/icon-rock.svg' /></div>
+          </button>
+          <button class='paper house inactive'>
+              <div class='circle'><img src='./images/icon-paper.svg' /></div>
+          </button>
+          <button class='scissors house inactive'>
+              <div class='circle'><img src='./images/icon-scissors.svg' /></div>
+          </button>
+        </div>
+
+      </div>
+
+      <div class='play' id="play">
+
+        <img src='./images/bg-triangle.svg' class='triangle' />
+        <button class='rock' id='rock'>
+            <div class='circle'><img src='./images/icon-rock.svg' /></div>
+        </button>
+        <button class='paper' id='paper'>
+            <div class='circle'><img src='./images/icon-paper.svg' /></div>
+        </button>
+        <button class='scissors' id='scissors'>
+            <div class='circle'><img src='./images/icon-scissors.svg' /></div>
+        </button>
+
+      </div>
+
+      <div class='blackBg inactive'></div>
+      <div class='openRules inactive'>
+
+        <span>RULES</span>
+        <img src='./images/icon-close.svg' class='close' id="close" />
+        <img src='./images/image-rules.svg' class='read-rule' />
+        <div style='font-size: 20px; position: absolute; bottom: 22px; opacity: 0.8'>
+
+          <ul>
+              <li>WIN: You gain 1 point</li>
+              <li>LOSS: The house gain 1 point</li>
+              <li>DRAW: No points given</li>
+          </ul>
+          
+            <!-- Whoever reaches match point first claims victory -->
+        </div>
+
+      </div>
+
+      <button class='rules' id='rules'>
+        RULES
+      </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
